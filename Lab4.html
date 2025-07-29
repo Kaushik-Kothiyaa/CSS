@@ -1,0 +1,91 @@
+<!-- Create a simple webpage layout using Flexbox. The layout should include:
+A header.
+A sidebar on the left.
+A main content area in the center.
+A footer. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(181, 165, 145, 0.3);
+            display: flex;
+            flex-direction: column;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            border: 1px solid black;
+            background-color: rgb(220, 253, 175);
+            display: flex;
+            
+    
+
+        }
+
+        header {
+            height: 100px;
+            width: 100%;
+            border: 1px solid black;
+            background-color: rgb(208, 242, 255);
+            padding: 20px;
+        }
+
+        footer {
+            height: 100px;
+            width: 100%;
+            border: 1px solid black;
+            background-color: bisque;
+            padding: 20px;
+            
+        }
+
+        aside {
+            height: 700px;
+            width: 20vw;
+            border: 1px solid black;
+            background-color: rgb(230, 184, 128);
+            padding: 20px;
+        }
+
+        main {
+            height: 700px;
+            width: 80vw;
+            border: 1px solid black;
+            background-color: rgb(153, 169, 255);
+            display: flex;
+            padding: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        This is a Header
+    </header>
+    <div class="container">
+        <aside>
+        <p>aside bar</p>
+    </aside>
+    <main>
+        <p>Main bar</p>
+
+    </main>
+    </div>
+    
+     <footer>
+            This is a Footer
+    </footer>
+</body>
+</html>

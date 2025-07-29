@@ -1,0 +1,46 @@
+<!-- Add padding and borders to the elements.
+Ensure the layout is clean and centered on the page using CSS margins.
+Use the box-sizing property to demonstrate both content-box and border- box on different elements. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxSizing</title>
+    <style>
+        .content-box {
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            padding: 20px;
+            background-color: beige;
+            border: 2px solid black;
+            box-sizing: content-box;
+        }
+
+        .border-box {
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(171, 171, 106);
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: silver;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <p>Content Box</p>
+    </div>
+
+    <div class="border-box">
+        <p>Border Box</p>
+    </div>
+</body>
+</html>
